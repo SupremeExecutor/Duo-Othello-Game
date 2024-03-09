@@ -1,4 +1,4 @@
-Print board/´òÓ¡ÆåÅÌ:
+Print board/æ‰“å°æ£‹ç›˜:
 OOOOOOOOOOOO
 OOXXXXXXXOOX
 OOOOOXOOOOOX

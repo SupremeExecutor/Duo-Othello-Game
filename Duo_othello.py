@@ -37,7 +37,7 @@ def initialize_board():
     board = [[EMPTY] * SIZE_OF_BOARD for _ in range(SIZE_OF_BOARD)]
     player_type = ""
     time = 0
-    f = open("D:/code/CSCI561-HW/HW2/homework/input.txt") #Need input.txt/需要预设input(通过修改input可以方便实现多种棋盘大小与初始局面)
+    f = open("input.txt") #Need input.txt/需要预设input(通过修改input可以方便实现多种棋盘大小与初始局面)
     # player_type = f.readline()
     # player_type = ''.join(player_type.split('\n')) #！！！读取txt会带有换行符!!!
     # time = str(f.readline()).split()
@@ -61,7 +61,7 @@ def initialize_board():
 def initialize_weight_board():
     try:
         board = [[EMPTY] * SIZE_OF_BOARD for _ in range(SIZE_OF_BOARD)]
-        f = open("D:/code/CSCI561-HW/HW2/homework/weight.txt","r")
+        f = open("weight.txt","r")
         for x in range(SIZE_OF_BOARD):
             line = f.readline()
             line = list(line.split(" "))
@@ -83,7 +83,7 @@ def initialize_weight_board():
                  [-8,-24,-4,-3,-3,-3,-3,-3,-3,-4,-24,-8],
                  [100,-8,10,8,6,6,6,6,8,10,-8,100]]              
 
-        f = open("D:/code/CSCI561-HW/HW2/homework/weight.txt","w")
+        f = open("weight.txt","w", encoding="utf-8")
         for x in range(SIZE_OF_BOARD):
             for y in range(SIZE_OF_BOARD):
                 f.write(str(board[x][y])+" ")
@@ -115,7 +115,7 @@ def board_print(board):
 
 def board_file_print(board):
 
-    file = open("D:/code/CSCI561-HW/HW2/homework/Finalboard.txt","w")
+    file = open("Finalboard.txt","w", encoding="utf-8")
     file.write("Print board/打印棋盘:\n")
     for i in range(SIZE_OF_BOARD):
         for j in range(SIZE_OF_BOARD):
